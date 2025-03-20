@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set valid age range for DOB
   const minDate = new Date();
-  minDate.setFullYear(minDate.getFullYear() - 55);
+  minDate.setFullYear(minDate.getFullYear() - 58); // 2025 - 58 = 1967
+  
   const maxDate = new Date();
-  maxDate.setFullYear(maxDate.getFullYear() - 18);
+  maxDate.setFullYear(maxDate.getFullYear() - 21); // 2025 - 21 = 2004
+  
   const dobInput = document.getElementById("dob");
   dobInput.setAttribute("min", minDate.toISOString().split("T")[0]);
   dobInput.setAttribute("max", maxDate.toISOString().split("T")[0]);
